@@ -1,4 +1,18 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+	images: {
+		remotePatterns: [
+			{
+				hostname: "www.thebalancemoney.com",
+			},
+			{
+				hostname: "www.lifewire.com",
+			},
+			{
+				hostname: "education.medicaldialogues.in",
+			},
+		],
+	},
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
